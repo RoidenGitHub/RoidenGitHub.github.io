@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <title>Hungry? Get Grab.</title>
+    <title>What's up?</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="about">
     <header>
       <nav class="navbar">
         <img src="assets/logo.png">
@@ -24,25 +26,39 @@
       <div class="overlay"></div>
     </header>
 
-    
+    <div class="aboutus">
+        <div class="container">
+          <div class="title">
+            <h1>About Us</h1>
+            <div class="about">
+              <div class="text">
+                <h3>Back in business school where we met... </h3>
+                <p>we both took a class called Business at the Base of the Pyramid (BBOP)
+                and were greatly inspired by the story of Lapdesk, a for-profit social enterprise (FOPSE) dedicated to eradicating
+                the shortage of classroom desks at public schools. This case study and BBOP made us realise that businesses can create
+                double bottom lines—i.e. deliver profits and social impact at the same time—and sparked a dream of building a company
+                that would be a force for good for Southeast Asia, the place we call home. We started off as a ride-hailing company,
+                helping drivers earn a livelihood, only to open our eyes and see the millions of everyday entrepreneurs: the tuk tuk
+                driver in Phnom Penh, the wet market fishmonger, the Chinatown chicken rice seller we’ve known for the past 20 years.
+                With more than 70 million small and medium-sized enterprises (SMEs) in SEA, employing over 140 million people and
+                accounting for 99% of all businesses in the region, everyday entrepreneurs are the bedrock of our economy and
+                the reason Grab expanded its services to become the superapp to millions of such entrepreneurs.
+                </p>
+                <p>Anthony Tan and Tan Hooi Ling, Founders of <span class="highlight">Grab</span></p>
+              </div>
+              <div class="image-placeholder">
+                <img src="assets/founders.jpg" alt="Profile Image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    <section class="copyright">
 
-    <script>
-        const backgrounds = [
-          "assets/background.jpg",
-          "assets/bg.jpg",
-          "assets/bckgrnd.jpg",
-        ];
-  
-        function getRandomBackground() {
-          return backgrounds[Math.floor(Math.random() * backgrounds.length)];
-        }
-  
-        document.addEventListener("DOMContentLoaded", function() {
-          const randomBackground = getRandomBackground();
-          document.body.style.backgroundImage = `url(${randomBackground})`;
-          document.body.style.backgroundSize = "cover";
-          document.body.style.backgroundPosition = "center";
-        });
-      </script>
+      <div class="content"></div>
+    <p>© 2024 All rights reserved. For Entertainment Purpose Only.</p>
+      </div>
+    </section>
   </body>
 </html>
