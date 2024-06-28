@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <title>Hungry? Get Grab.</title>
+    <title>What's your picK?</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="service">
     <header>
       <nav class="navbar">
         <img src="assets/logo.png">
@@ -24,25 +26,55 @@
       <div class="overlay"></div>
     </header>
 
-    
+<section class="pricing">
+  <div class="container">
+    <h2 class="options-header">Options</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="price-box">
+          <h3>Grab Hotel</h3>
+          <p>Stay-cation!</p>
+          <ul>
+            <li>Ayala Hotels</li>
+            <li>Diamond Hotels</li>
+            <li>The Peninsula Manila</li>
+          </ul>
+          <button>Get now!</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="price-box">
+          <h3>Grab Services</h3>
+          <p>Need a ride?</p>
+          <ul>
+            <li>Taxis</li>
+            <li>Cars</li>
+            <li>Vans</li>
+          </ul>
+          <button>Get now!</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="price-box">
+          <h3>Grab Food</h3>
+          <p>Hungry?</p>
+          <ul>
+            <li>Fast Foods</li>
+            <li>Restaurants</li>
+            <li>Food Delivery!</li>
+          </ul>
+          <button>Get now!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script>
-        const backgrounds = [
-          "assets/background.jpg",
-          "assets/bg.jpg",
-          "assets/bckgrnd.jpg",
-        ];
-  
-        function getRandomBackground() {
-          return backgrounds[Math.floor(Math.random() * backgrounds.length)];
-        }
-  
-        document.addEventListener("DOMContentLoaded", function() {
-          const randomBackground = getRandomBackground();
-          document.body.style.backgroundImage = `url(${randomBackground})`;
-          document.body.style.backgroundSize = "cover";
-          document.body.style.backgroundPosition = "center";
-        });
-      </script>
+
+<section class="copyright">
+      <div class="content"></div>
+    <p>© 2024 All rights reserved. For Entertainment Purpose Only.</p>
+      </div>
+    </section>
   </body>
 </html>
