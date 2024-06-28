@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Home page & Index */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +10,10 @@
 }
 
 body {
-  height: 100vh;
-  background: url('assets/background.jpg');
+  height: 150vh;
+  background: url('assets/background.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  animation: background-change 15s infinite;
 }
 
 .overlay {
@@ -88,18 +89,18 @@ header .navbar {
 }
 
 .navbar ul li a:hover {
-color: #FFAC1C;
+color: #3cdd4c;
 }
 
 .navbar ul li:hover a {
-color: #FFAC1C;
+color: #3cdd4c;
 }
 
 .navbar ul li::after{
   content: '';
   height: 3px;
   width: 0;
-  background:#FFAC1C;
+  background:#3cdd4c;
   position: absolute;
   right: 0;
   bottom: -5px;
@@ -118,7 +119,7 @@ color: #FFAC1C;
 }
 
 .hero-section .content {
-  color: #fff;
+  color: #3cdd4c;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -133,4 +134,156 @@ color: #FFAC1C;
   font-weight: 300;
   margin-top: 15px;
   max-width: 600px;
+}
+
+.hero-section .content button {
+  background: #3cdd4c;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 38px;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.copyright p {
+  bottom: 200px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #3cdd4c;
+}
+/* About Us */
+
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.title {
+  color: #3cdd4c;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-placeholder {
+  text-align: center;
+}
+
+.image-placeholder img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    height: auto;
+    padding: 20px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .text {
+    margin-right: 0;
+  }
+  .image-placeholder {
+    margin-top: 20px;
+  }
+}
+
+/* Service */
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.price-box {
+  margin: 20px;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.price-box h3 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.price-box p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #34c759, #2f9d4c);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Set a fixed height for the price container */
+}
+
+.price-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-box li {
+  margin-bottom: 10px;
+}
+
+.price-box button {
+  background-color: #3cdd4c;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.price-box button:hover {
+  background-color: #2f9d4c;
+}
+
+.options-header {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
 }
